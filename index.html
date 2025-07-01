@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenLayer AI - Transforming Business with Intelligent Solutions</title>
+    <meta name="description" content="Harness the power of AI for content generation, image enhancement, and data analysis. Professional AI solutions for modern businesses.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="logo">GenLayer AI</h1>
+                    <span class="tagline">Transforming Business with Intelligent Solutions</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="#services">Services</a>
+                    <a href="#offers">Solutions</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#services">Services</a>
+                <a href="#offers">Solutions</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">✨</div>
+                <h1 class="hero-title">Welcome to <span class="text-blue">GenLayer AI</span></h1>
+                <p class="hero-subtitle">Transforming Business with Intelligent Solutions</p>
+                <p class="hero-description">
+                    Harness the power of artificial intelligence to revolutionize your content creation, 
+                    enhance your images, and unlock insights from your data.
+                </p>
+                <button class="cta-button" onclick="scrollToOffers()">
+                    Explore AI Solutions
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our AI Solutions</h2>
+                <p>Discover how our AI-powered services can transform your business operations</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>AI Content Generation</h3>
+                    <p>Create high-quality, engaging content at scale with our advanced AI writing tools. From blog posts to marketing copy, generate professional content that resonates with your audience.</p>
+                    <ul class="feature-list">
+                        <li>Blog Posts & Articles</li>
+                        <li>Marketing Copy</li>
+                        <li>Social Media Content</li>
+                        <li>Email Campaigns</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🖼️</div>
+                    <h3>Image Enhancement</h3>
+                    <p>Transform and enhance your images with cutting-edge AI technology. Upscale, restore, and optimize images for professional use across all your marketing channels.</p>
+                    <ul class="feature-list">
+                        <li>Image Upscaling</li>
+                        <li>Photo Restoration</li>
+                        <li>Background Removal</li>
+                        <li>Style Transfer</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Analysis</h3>
+                    <p>Unlock valuable insights from your data with intelligent analytics. Make data-driven decisions with our AI-powered analysis tools that reveal hidden patterns and trends.</p>
+                    <ul class="feature-list">
+                        <li>Predictive Analytics</li>
+                        <li>Pattern Recognition</li>
+                        <li>Automated Reports</li>
+                        <li>Business Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CPA Offers Section -->
+    <section id="offers" class="offers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your AI Solution</h2>
+                <p>Select the perfect AI package to accelerate your business growth</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <h3>AI Content Pro</h3>
+                    <p>Professional AI writing suite with advanced templates and SEO optimization</p>
+                    <div class="price">Starting at $29/month</div>
+                    <ul class="offer-features">
+                        <li>⚡ Unlimited Content Generation</li>
+                        <li>⚡ SEO Optimization</li>
+                        <li>⚡ Multi-language Support</li>
+                        <li>⚡ 24/7 Support</li>
+                    </ul>
+                    <button class="offer-button" onclick="handleOfferClick('AI Content Pro')">
+                        Start Free Trial
+                        <span class="external-link">↗</span>
+                    </button>
+                </div>
+                
+                <div class="offer-card popular">
+                    <div class="popular-badge">⭐ Most Popular</div>
+                    <h3>Image AI Studio</h3>
+                    <p>Complete image enhancement and generation toolkit for professionals</p>
+                    <div class="price">Starting at $39/month</div>
+                    <ul class="offer-features">
+                        <li>⚡ HD Image Enhancement</li>
+                        <li>⚡ Batch Processing</li>
+                        <li>⚡ API Access</li>
+                        <li>⚡ Commercial License</li>
+                    </ul>
+                    <button class="offer-button primary" onclick="handleOfferClick('Image AI Studio')">
+                        Get Started
+                        <span class="external-link">↗</span>
+                    </button>
+                </div>
+                
+                <div class="offer-card">
+                    <h3>Data Insights Plus</h3>
+                    <p>Advanced analytics and business intelligence powered by AI</p>
+                    <div class="price">Starting at $49/month</div>
+                    <ul class="offer-features">
+                        <li>⚡ Real-time Analytics</li>
+                        <li>⚡ Custom Dashboards</li>
+                        <li>⚡ Predictive Models</li>
+                        <li>⚡ Team Collaboration</li>
+                    </ul>
+                    <button class="offer-button" onclick="handleOfferClick('Data Insights Plus')">
+                        Try Now
+                        <span class="external-link">↗</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="trust-section">
+                <div class="trust-card">
+                    <div class="trust-icon">🛡️</div>
+                    <h3>Why Choose GenLayer AI?</h3>
+                    <div class="trust-features">
+                        <div class="trust-feature">
+                            <h4>Cutting-Edge Technology</h4>
+                            <p>Latest AI models and algorithms</p>
+                        </div>
+                        <div class="trust-feature">
+                            <h4>24/7 Support</h4>
+                            <p>Expert assistance whenever you need it</p>
+                        </div>
+                        <div class="trust-feature">
+                            <h4>Secure & Reliable</h4>
+                            <p>Enterprise-grade security and uptime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3 class="footer-logo">GenLayer AI</h3>
+                    <p class="footer-description">
+                        Transforming businesses with intelligent AI solutions. Join thousands of companies 
+                        already leveraging our cutting-edge technology.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            contact@genlayer-ai.com
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            +1 (555) 123-4567
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            San Francisco, CA
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">AI Content Generation</a></li>
+                            <li><a href="#services">Image Enhancement</a></li>
+                            <li><a href="#services">Data Analysis</a></li>
+                            <li><a href="#offers">Enterprise Solutions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> GenLayer AI. All rights reserved. | Transforming Business with Intelligent Solutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
